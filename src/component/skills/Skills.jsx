@@ -34,7 +34,7 @@ const images = [
     title: "React",
     label:
       "A cutting-edge JavaScript library for building user interfaces, enabling me to create responsive and engaging front-end applications.",
-    imgPath: "/assets/react.png",
+    imgPath: "/assets/react2.png",
   },
   {
     title: "Node.js",
