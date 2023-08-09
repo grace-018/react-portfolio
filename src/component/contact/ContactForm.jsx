@@ -11,7 +11,7 @@ const ContactMe = () => {
       wrap="true"
       alignItems="center"
       sx={{
-        height: "100vh", // Adjust the height for smaller screens
+        height: "80vh", // Adjust the height for smaller screens
         width: "100vw", // Adjust the width for smaller screens
         margin: "auto",
         background: "#F9F5E7 ",
