@@ -60,7 +60,7 @@ function Projects() {
       name: "Post It Blog",
       description:
         "A blogging platform has been established by a team of three members, drawing inspiration from the dev.to website. This platform aims to foster a positive and all-encompassing social network for software developers, accompanying them throughout every phase of their professional journey.",
-      link: "https://cash-buddy.netlify.app/",
+      link: "https://post-it-1862.onrender.com/",
       github: "https://github.com/aisha0926/blog-platform",
     },
   ];
