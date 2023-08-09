@@ -8,11 +8,11 @@ function About() {
       justifyContent="center"
       wrap="true"
       sx={{
-        height: "120vh", // Adjust the height for smaller screens
+        height: "auto", // Adjust the height for smaller screens
         width: "100vw", // Adjust the width for smaller screens
         margin: "auto",
         background: "#F9F5E7 ",
-        paddingBottom: "30px",
+        paddingBottom: "220px",
       }}
     >
       <Stack spacing={5} direction="column" sx={{ width: "80vw" }}>
