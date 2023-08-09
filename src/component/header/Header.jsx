@@ -90,7 +90,7 @@ function Header() {
           <br />
           {pages.map((item, index) => (
             <div key={index}>
-              <MenuItem onClick={handleCloseNavMenu}>
+              <MenuItem>
                 {" "}
                 <ScrollLink
                   activeClass="active"
@@ -99,6 +99,7 @@ function Header() {
                   smooth={true}
                   offset={-70}
                   duration={500}
+                  onClick={handleCloseNavMenu}
                 >
                   {item.text}{" "}
                 </ScrollLink>
