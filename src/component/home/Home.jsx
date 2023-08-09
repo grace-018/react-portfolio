@@ -46,7 +46,7 @@ function Home() {
             textDecoration: "none",
           }}
         >
-          a <b>Pro</b>grammer
+          a Full stack Developers
           <br />
           <Button
             variant="contained"
