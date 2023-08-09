@@ -129,7 +129,7 @@ function Header() {
               cursor: "pointer",
             }}
           >
-            <ScrollLink to="about" smooth={true}>
+            <ScrollLink to="about" smooth={true} offset={-100}>
               About
             </ScrollLink>
           </Typography>

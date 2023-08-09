@@ -7,10 +7,9 @@ function About() {
       display="flex"
       justifyContent="center"
       wrap="true"
-      alignItems="center"
       sx={{
         height: "120vh", // Adjust the height for smaller screens
-        width: "100%", // Adjust the width for smaller screens
+        width: "100vw", // Adjust the width for smaller screens
         margin: "auto",
         background: "#F9F5E7 ",
         paddingBottom: "30px",
