@@ -32,7 +32,7 @@ function About() {
 
         <Avatar
           alt="Grace"
-          src="/assets/Grace-modified.png"
+          src="/assets/grace.png"
           sx={{
             width: 300,
             height: 300,
@@ -50,9 +50,8 @@ function About() {
             textAlign: "center",
           }}
         >
-          A skilled Full Stack Developer from the Philippines, driven by a deep
-          passion for exploring Anime and Korean Shows, delving into Manga and
-          Novels, and continuously honing expertise in Web Development.
+          I’m a web developer and accounting professional who enjoys working at
+          the intersection of tech and finance.
         </Typography>
 
         <Typography
@@ -65,13 +64,19 @@ function About() {
             textAlign: "center",
           }}
         >
-          I earned my degree in BS Accountancy from Adamson University, where I
-          developed a strong foundation in financial matters and analytical
-          skills. <br />
-          However, my thirst for new challenges and curiosity about the dynamic
-          world of coding led me to embark on a transformative journey.
-          Enrolling in Uplift Bootcamp, I embraced the opportunity to dive
-          headfirst into the exciting realm of programming.
+          With a background in accountancy and hands-on experience in web
+          development, I bring both analytical precision and creative
+          problem-solving to the projects I take on. <br />
+          I’ve managed websites, content systems, and e-commerce platforms,
+          while also handling financial records, bookkeeping, and data
+          management. On the tech side, I love building with HTML, CSS,
+          JavaScript, and React, and I’ve created projects like an interactive
+          game and a finance tracker app. On the accounting side, I’m skilled in
+          Excel, QuickBooks, and financial reporting, which keeps my work
+          detail-oriented and well-organized. <br />
+          Whether I’m coding a new feature or balancing the books, I enjoy
+          finding smart, efficient solutions and making processes smoother for
+          everyone.
         </Typography>
       </Stack>
     </Box>

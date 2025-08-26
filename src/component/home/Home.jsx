@@ -35,7 +35,7 @@ function Home() {
             alignSelf: "center",
           }}
         >
-          Grace Sio
+          Mary Grace Sio
         </Typography>
         <Typography
           variant="h5"
@@ -46,7 +46,7 @@ function Home() {
             textDecoration: "none",
           }}
         >
-          a Full stack Developers
+          Web Developer & Accounting Professional
           <br />
           <Button
             variant="contained"
