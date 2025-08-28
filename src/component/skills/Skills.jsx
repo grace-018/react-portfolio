@@ -8,6 +8,7 @@ const styles = {
   },
   label: {
     margin: "10px",
+    paddingBottom: "25px",
   },
 };
 
@@ -15,7 +16,7 @@ const images = [
   {
     title: "HTML",
     label:
-      " Hypertext Markup Language, the foundation of web development, enabling me to create the structure and layout of web pages.",
+      "Hypertext Markup Language, the foundation of web development, enabling me to create the structure and layout of web pages.",
     imgPath: "/assets/html.png",
   },
   {
@@ -25,13 +26,13 @@ const images = [
     imgPath: "/assets/css.png",
   },
   {
-    title: "Javascript",
+    title: "JavaScript",
     label:
-      " The versatile programming language that empowers me to implement interactive elements and add dynamic functionalities to web applications.",
+      "The versatile programming language that empowers me to implement interactive elements and add dynamic functionalities to web applications.",
     imgPath: "/assets/javascript.png",
   },
   {
-    title: "React",
+    title: "React.js",
     label:
       "A cutting-edge JavaScript library for building user interfaces, enabling me to create responsive and engaging front-end applications.",
     imgPath: "/assets/react2.png",
@@ -43,16 +44,76 @@ const images = [
     imgPath: "/assets/nodejs.png",
   },
   {
-    title: "Express",
+    title: "Express.js",
     label:
-      " A powerful web application framework for Node.js that simplifies the process of creating robust and feature-rich server-side applications.",
+      "A powerful web application framework for Node.js that simplifies the process of creating robust and feature-rich server-side applications.",
     imgPath: "/assets/express-js.png",
   },
   {
     title: "MongoDB",
     label:
       "A popular NoSQL database, providing me with the ability to work with unstructured data and seamlessly store, retrieve, and manage information for web applications.",
-    imgPath: "/assets/mongodb.jpeg",
+    imgPath: "/assets/mongodb.png",
+  },
+  {
+    title: "Bootstrap",
+    label:
+      "A front-end toolkit that speeds up responsive web design with prebuilt components and a mobile-first approach.",
+    imgPath: "/assets/bootstrap.png",
+  },
+  {
+    title: "Material UI",
+    label:
+      "A React component library that helps me design modern, consistent, and responsive interfaces with ease.",
+    imgPath: "/assets/materialui.png",
+  },
+  {
+    title: "Postman",
+    label:
+      "A powerful tool for testing and integrating APIs, allowing me to ensure smooth communication between front-end and back-end services.",
+    imgPath: "/assets/postman.png",
+  },
+  {
+    title: "Git",
+    label:
+      "A version control system that allows me to track changes, collaborate effectively, and manage code repositories.",
+    imgPath: "/assets/git.png",
+  },
+  {
+    title: "Figma",
+    label:
+      "A collaborative design tool that I use to create wireframes, UI mockups, and prototypes for seamless design-to-development workflow.",
+    imgPath: "/assets/figma.png",
+  },
+  {
+    title: "Wrike",
+    label:
+      "A project management tool that helps me collaborate, track progress, and manage tasks effectively within teams.",
+    imgPath: "/assets/wrike.png",
+  },
+  {
+    title: "Azure DevOps",
+    label:
+      "A development platform that supports CI/CD, project tracking, and team collaboration for efficient software delivery.",
+    imgPath: "/assets/azuredevops.png",
+  },
+  {
+    title: "Microsoft CRM",
+    label:
+      "A customer relationship management platform that helps streamline workflows and manage client interactions.",
+    imgPath: "/assets/microsoftcrm.png",
+  },
+  {
+    title: "Magnolia CMS",
+    label:
+      "A flexible enterprise CMS that allows me to create, manage, and deliver digital content seamlessly.",
+    imgPath: "/assets/magnolia.png",
+  },
+  {
+    title: "NopCommerce",
+    label:
+      "An open-source eCommerce platform that enables me to manage and customize online stores efficiently.",
+    imgPath: "/assets/nopcommerce.png",
   },
 ];
 
@@ -107,11 +168,8 @@ function Skills() {
                   alt={image.label}
                   style={styles.image}
                 />
-
-                <div style={styles.label}>
-                  <h5>{image.title}</h5>
-                  {image.label}
-                </div>
+                <h3>{image.title}</h3>
+                <div style={styles.label}>{image.label}</div>
               </div>
             ))}
           </Carousel>

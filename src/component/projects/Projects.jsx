@@ -53,7 +53,7 @@ function Projects() {
       github: "https://github.com/grace-018/cash-buddy-backend",
       github2: "https://github.com/grace-018/cash-buddy-FE",
     },
-    {
+    /*{
       id: 5,
       image: "/assets/postit.png",
       alt: "Post It",
@@ -62,7 +62,7 @@ function Projects() {
         "A blogging platform has been established by a team of three members, drawing inspiration from the dev.to website. This platform aims to foster a positive and all-encompassing social network for software developers, accompanying them throughout every phase of their professional journey.",
       link: "https://post-it-1862.onrender.com/",
       github: "https://github.com/aisha0926/blog-platform",
-    },
+    },*/
   ];
   return (
     <Box
