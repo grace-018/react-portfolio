@@ -1,4 +1,12 @@
-import { Box, Typography, Stack } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Stack,
+  Card,
+  CardContent,
+  CardMedia,
+  Grid,
+} from "@mui/material";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -117,6 +125,33 @@ const images = [
   },
 ];
 
+const otherSkills = [
+  {
+    id: 1,
+    title: "B2B E-commerce Administration",
+    alt: "B2B E-commerce Administration",
+    description:
+      "Experienced in managing e-commerce operations including content creation, digital asset management, inventory tracking, and data entry to ensure smooth online business workflows.",
+    imgPath: "/assets/ecommerce.png",
+  },
+  {
+    id: 2,
+    title: "Accounting & Finance",
+    alt: "Accounting & Finance",
+    description:
+      "Proficient in financial recordkeeping, bookkeeping principles, ledger entries, reconciliation, invoicing, and billing using tools such as Microsoft Excel and QuickBooks.",
+    imgPath: "/assets/accounting.png",
+  },
+  {
+    id: 3,
+    title: "Professional Skills",
+    alt: "Professional Skills",
+    description:
+      "Strong analytical and problem-solving abilities with the flexibility to work independently or as part of a collaborative team to achieve business objectives.",
+    imgPath: "/assets/professional.png",
+  },
+];
+
 function Skills() {
   return (
     <Box
@@ -174,6 +209,50 @@ function Skills() {
             ))}
           </Carousel>
         </div>
+        <Typography
+          variant="h6"
+          sx={{
+            fontFamily: "Didact Gothic",
+            fontWeight: "600",
+            color: "inherit",
+            textDecoration: "none",
+            alignSelf: "left",
+            textAlign: "left", // align the text on smaller screens
+          }}
+        >
+          Other Skills
+        </Typography>
+        <Grid container justifyContent="center" spacing={3} item>
+          {otherSkills.map((skill) => (
+            <Grid item xs={12} sm={6} md={4} key={skill.id}>
+              <Card
+                sx={{
+                  flex: 1,
+                  maxWidth: "90%",
+                  height: "100%",
+                  // margin: "10px",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <CardMedia
+                  component="img"
+                  sx={{ height: "200px", width: "100%", objectFit: "contain" }}
+                  image={skill.imgPath}
+                  alt={skill.alt}
+                />
+                <CardContent sx={{ flex: 1 }}>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {skill.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {skill.description}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
       </Stack>
     </Box>
   );
