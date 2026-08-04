@@ -95,6 +95,7 @@ function Projects() {
         width: "100%", // Adjust the width for smaller screens
         margin: "auto",
         bgcolor: "background.alt",
+        paddingTop: { xs: 4, md: 8 },
         paddingBottom: "50px",
       }}
     >
