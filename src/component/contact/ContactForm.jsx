@@ -12,9 +12,9 @@ const ContactMe = () => {
       alignItems="center"
       sx={{
         height: "80vh", // Adjust the height for smaller screens
-        width: "100vw", // Adjust the width for smaller screens
+        width: "100%", // Adjust the width for smaller screens
         margin: "auto",
-        background: "#F9F5E7 ",
+        bgcolor: "background.default",
       }}
     >
       <Stack spacing={5} direction="column">
@@ -72,11 +72,11 @@ const ContactMe = () => {
               sx={{
                 width: "200px",
                 alignSelf: "center",
-                backgroundColor: "#B8C5F9",
-                color: "black",
+                bgcolor: "accent.main",
+                color: "accent.contrastText",
                 "&:hover": {
-                  backgroundColor: "#F5E7F9", // Change the background color on hover
-                  color: "black", // Change the text color on hover
+                  bgcolor: "secondary.main",
+                  color: "accent.contrastText",
                 },
               }}
             >
