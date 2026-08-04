@@ -82,9 +82,9 @@ function Projects() {
       wrap="true"
       sx={{
         height: "auto", // Adjust the height for smaller screens
-        width: "100vw", // Adjust the width for smaller screens
+        width: "100%", // Adjust the width for smaller screens
         margin: "auto",
-        background: "#F9F5E7 ",
+        bgcolor: "background.alt",
         paddingBottom: "50px",
       }}
     >
@@ -113,6 +113,11 @@ function Projects() {
                   // margin: "10px",
                   display: "flex",
                   flexDirection: "column",
+                  transition: "transform 0.2s ease, box-shadow 0.2s ease",
+                  "&:hover": {
+                    transform: "translateY(-4px)",
+                    boxShadow: 6,
+                  },
                 }}
               >
                 <CardActionArea>
