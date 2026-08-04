@@ -10,8 +10,8 @@ function Home() {
       alignItems="center"
       sx={{
         height: "100vh",
-        width: "100vw",
-        background: "#F9F5E7 ",
+        width: "100%",
+        bgcolor: "background.default",
       }}
     >
       <Stack spacing={5} direction="column">
@@ -51,10 +51,10 @@ function Home() {
           <Button
             variant="contained"
             sx={{
-              backgroundColor: "#765827",
-              color: "white",
+              bgcolor: "accent.main",
+              color: "accent.contrastText",
               "&:hover": {
-                backgroundColor: "#C8AE7D",
+                bgcolor: "secondary.main",
               },
               marginTop: "10px",
             }}
