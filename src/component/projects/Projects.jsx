@@ -73,6 +73,16 @@ function Projects() {
       link: "https://tripcanvas.netlify.app/",
       github: "https://github.com/grace-018/travel-planner",
     },
+    {
+      id: 7,
+      image: "/assets/n8n-portfolio.png",
+      alt: "N8N Automation Portfolio",
+      name: "N8N Automation Portfolio",
+      description:
+        "A collection of n8n workflow automations solving real business problems: AI-powered audio transcription, customer support and registration routing, scheduled Telegram bots, AI document summarization, automated file sharing, and website uptime monitoring. Built with n8n, Google Gemini AI, Google Workspace, Telegram, and Slack integrations.",
+      link: "https://grace-n8n-portfolio.netlify.app/",
+      github: "https://github.com/grace-018",
+    },
   ];
   return (
     <Box
@@ -104,7 +114,7 @@ function Projects() {
         </Typography>
         <Grid container justifyContent="center" spacing={3} item>
           {projectList.map((proj) => (
-            <Grid item xs={12} sm={6} key={proj.id}>
+            <Grid item xs={12} sm={6} md={4} key={proj.id}>
               <Card
                 sx={{
                   flex: 1,
