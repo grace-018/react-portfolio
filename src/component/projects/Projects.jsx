@@ -63,6 +63,16 @@ function Projects() {
       link: "https://post-it-1862.onrender.com/",
       github: "https://github.com/aisha0926/blog-platform",
     },*/
+    {
+      id: 6,
+      image: "/assets/tripcanvas.png",
+      alt: "TripCanvas",
+      name: "TripCanvas",
+      description:
+        "A full-stack travel planning app that lets users plan trips, split expenses, and pack together. Features include day-by-day itineraries with budget tracking, an expense splitter, a packing checklist, trip notes, and public itinerary sharing. Built with Next.js and Supabase on the frontend, an Express/TypeScript API on the backend, and deployed on Netlify.",
+      link: "https://tripcanvas.netlify.app/",
+      github: "https://github.com/grace-018/travel-planner",
+    },
   ];
   return (
     <Box
