@@ -11,6 +11,16 @@ import {
   SwipeableDrawer,
 } from "@mui/material";
 
+const navLinkStyle = {
+  mr: 2,
+  display: { xs: "none", md: "flex" },
+  fontFamily: "Didact Gothic",
+  letterSpacing: ".1rem",
+  color: "#FAF0D7",
+  textDecoration: "none",
+  cursor: "pointer",
+};
+
 function Header() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -32,7 +42,7 @@ function Header() {
   return (
     <AppBar
       position="sticky"
-      sx={{ backgroundColor: "#65451F", width: "100vw" }}
+      sx={{ backgroundColor: "primary.main", width: "100%" }}
     >
       <Toolbar>
         <Typography
@@ -110,7 +120,6 @@ function Header() {
             onClick={handleCloseNavMenu}
             component="a"
             href="https://tinyurl.com/5ecwfas7"
-            //"https://tinyurl.com/grace018"
             target="_blank"
           >
             Resume
@@ -118,82 +127,13 @@ function Header() {
         </SwipeableDrawer>
 
         <Stack spacing={5} direction="row">
-          <Typography
-            variant="body1"
-            noWrap
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "Arial",
-              letterSpacing: ".1rem",
-              color: "#FAF0D7",
-              textDecoration: "none",
-              cursor: "pointer",
-            }}
-          >
-            <ScrollLink to="about" smooth={true} offset={-100}>
-              About
-            </ScrollLink>
-          </Typography>
-
-          <Typography
-            variant="body1"
-            noWrap
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "Arial",
-              letterSpacing: ".1rem",
-              color: "#FAF0D7",
-              textDecoration: "none",
-              cursor: "pointer",
-            }}
-          >
-            <ScrollLink to="skills" smooth={true} offset={-100}>
-              Skills
-            </ScrollLink>
-          </Typography>
-
-          <Typography
-            variant="body1"
-            noWrap
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "Arial",
-              letterSpacing: ".1rem",
-              color: "#FAF0D7",
-              textDecoration: "none",
-              cursor: "pointer",
-            }}
-          >
-            <ScrollLink
-              to="projects"
-              smooth={true}
-              offset={-100} // Set your desired offset value here
-            >
-              Projects
-            </ScrollLink>
-          </Typography>
-
-          <Typography
-            variant="body1"
-            noWrap
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "Arial",
-              letterSpacing: ".1rem",
-              color: "#FAF0D7",
-              textDecoration: "none",
-              cursor: "pointer",
-            }}
-          >
-            <ScrollLink to="contact" smooth={true}>
-              {" "}
-              Contact Me
-            </ScrollLink>
-          </Typography>
+          {pages.map((item, index) => (
+            <Typography key={index} variant="body1" noWrap sx={navLinkStyle}>
+              <ScrollLink to={item.to} smooth={true} offset={-100}>
+                {item.text}
+              </ScrollLink>
+            </Typography>
+          ))}
 
           <Typography
             variant="body1"
@@ -201,15 +141,7 @@ function Header() {
             component="a"
             href="https://tinyurl.com/5ecwfas7"
             target="_blank"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "Arial",
-              letterSpacing: ".1rem",
-              color: "#FAF0D7",
-              textDecoration: "none",
-              cursor: "pointer",
-            }}
+            sx={navLinkStyle}
           >
             Resume
           </Typography>
