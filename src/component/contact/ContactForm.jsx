@@ -75,7 +75,7 @@ const ContactMe = () => {
                 bgcolor: "accent.main",
                 color: "accent.contrastText",
                 "&:hover": {
-                  bgcolor: "secondary.main",
+                  bgcolor: "primary.main",
                   color: "accent.contrastText",
                 },
               }}

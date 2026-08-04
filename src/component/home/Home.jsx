@@ -54,7 +54,7 @@ function Home() {
               bgcolor: "accent.main",
               color: "accent.contrastText",
               "&:hover": {
-                bgcolor: "secondary.main",
+                bgcolor: "primary.main",
               },
               marginTop: "10px",
             }}
