@@ -161,10 +161,10 @@ function Skills() {
       wrap="true"
       sx={{
         height: "auto", // Adjust the height for smaller screens
-        width: "100vw", // Adjust the width for smaller screens
+        width: "100%", // Adjust the width for smaller screens
         margin: "auto",
-        background: "#F9F5E7 ",
-        paddingBottom: "200px",
+        bgcolor: "background.default",
+        paddingBottom: { xs: 6, md: 20 },
       }}
     >
       <Stack spacing={5} direction="column" sx={{ width: "80vw" }}>
@@ -233,6 +233,11 @@ function Skills() {
                   // margin: "10px",
                   display: "flex",
                   flexDirection: "column",
+                  transition: "transform 0.2s ease, box-shadow 0.2s ease",
+                  "&:hover": {
+                    transform: "translateY(-4px)",
+                    boxShadow: 6,
+                  },
                 }}
               >
                 <CardMedia
