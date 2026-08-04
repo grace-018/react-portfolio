@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <AppBar
       position="static"
-      sx={{ backgroundColor: "#65451F", width: "100vw" }}
+      sx={{ backgroundColor: "primary.main", width: "100%" }}
     >
       <Container maxWidth="lg">
         <Toolbar disableGutters>
