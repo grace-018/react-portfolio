@@ -9,10 +9,10 @@ function About() {
       wrap="true"
       sx={{
         height: "auto", // Adjust the height for smaller screens
-        width: "100vw", // Adjust the width for smaller screens
+        width: "100%", // Adjust the width for smaller screens
         margin: "auto",
-        background: "#F9F5E7 ",
-        paddingBottom: "220px",
+        bgcolor: "background.alt",
+        paddingBottom: { xs: 6, md: 22 },
       }}
     >
       <Stack spacing={5} direction="column" sx={{ width: "80vw" }}>
@@ -38,6 +38,9 @@ function About() {
             height: 300,
             alignSelf: "center",
             textAlign: "center",
+            boxShadow: "0 8px 24px rgba(101, 69, 31, 0.35)",
+            border: "4px solid",
+            borderColor: "background.default",
           }}
         />
         <Typography
@@ -50,7 +53,7 @@ function About() {
             textAlign: "center",
           }}
         >
-          I’m a web developer and accounting professional who enjoys working at
+          I'm a web developer and accounting professional who enjoys working at
           the intersection of tech and finance.
         </Typography>
 
@@ -67,14 +70,14 @@ function About() {
           With a background in accountancy and hands-on experience in web
           development, I bring both analytical precision and creative
           problem-solving to the projects I take on. <br />
-          I’ve managed websites, content systems, and e-commerce platforms,
+          I've managed websites, content systems, and e-commerce platforms,
           while also handling financial records, bookkeeping, and data
           management. On the tech side, I love building with HTML, CSS,
-          JavaScript, and React, and I’ve created projects like an interactive
-          game and a finance tracker app. On the accounting side, I’m skilled in
+          JavaScript, and React, and I've created projects like an interactive
+          game and a finance tracker app. On the accounting side, I'm skilled in
           Excel, QuickBooks, and financial reporting, which keeps my work
           detail-oriented and well-organized. <br />
-          Whether I’m coding a new feature or balancing the books, I enjoy
+          Whether I'm coding a new feature or balancing the books, I enjoy
           finding smart, efficient solutions and making processes smoother for
           everyone.
         </Typography>
